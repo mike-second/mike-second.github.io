@@ -9,7 +9,7 @@ function getQuestions(){
 		const easyQlines = easy.split('\n');	
 		const hardQlines = hard.split('\n');	
 		const expertQlines = expert.split('\n');	
-		console.log('Easy file content:', easyQlines);
+		console.log('Easy file contents:', easyQlines);
 		console.log('Hard file content:', hardQlines);
 		console.log('Expert file content:', expertQlines);
 	})
