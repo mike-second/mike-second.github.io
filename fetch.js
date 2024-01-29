@@ -6,9 +6,12 @@ function getQuestions(){
 	fetch('/expert.txt').then(x => x.text())
 	]).then(([easy, hard, expert]) => {
 		
-		console.log('Easy file content:', easy);
-		console.log('Hard file content:', hard);
-		console.log('Expert file content:', expert);
+		const easyQlines = easy.split('\n');	
+		const hardQlines = hard.split('\n');	
+		const expertQlines = expert.split('\n');	
+		console.log('Easy file content:', easyQlines);
+		console.log('Hard file content:', hardQlines);
+		console.log('Expert file content:', expertQlines);
 	})
 	
 }
